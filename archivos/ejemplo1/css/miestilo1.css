@@ -20,7 +20,7 @@ body {
 
 /* aplicamos estilos al header */
 header {
-  background: url("/ejemplo1/img/foto2.jpg");
+  background: url("/archivos/ejemplo1/img/foto2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px;
