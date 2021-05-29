@@ -1,0 +1,56 @@
+body{
+    background-color: darkolivegreen;
+}
+
+.contenedor{
+    background-color: white;
+}
+/*aplicamos un estilo para que la tabla ocupe todo el ancho*/
+/* aplicamos el borde a la tabla */
+table{
+    width: 100%;
+    border: 3px solid darkblue;
+    border-collapse: collapse;
+}
+
+table thead th,
+table tbody td{
+    border: 3px solid darkmagenta;
+    padding: 5px;
+}
+
+/*aumentamos la altura de los height*/
+/*Alineamos al centro los valores del th*/
+th{
+    height: 45px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table tbody tr:hover{
+    background-color: black;
+    color: white;
+}
+
+.tabla1{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla1 td, .tabla1 th{
+    border: 1px solid gainsboro;
+    padding: 8px;
+}
+.tabla1 th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+}
+
+.tabla1 tr:hover{
+    background-color: skyblue;
+    color: darkblue;
+}

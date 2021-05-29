@@ -1,0 +1,88 @@
+*{
+    font-size: 48px;
+}
+.contenedor{
+    backface-visibility: visible;
+}
+h1{
+    text-decoration-line: underline;
+    font-size: 75px;
+    text-shadow: 8px 4px 5px skyblue;
+}
+
+h2{
+    color:rgba(14, 3, 3, 0.884);
+    font-weight: bold;
+    font-size: 48px;
+}
+
+div{
+    color:rgb(20, 1, 1);
+    font-style: italic;
+    font-size: 35px;
+}
+
+.parrafo1{
+    color:rgb(0, 0, 12) ;
+    font-style: italic;
+    font-weight: initial;
+    font-size: 35px;
+}
+
+.parrafo2{
+    color:rgb(7, 2, 2);
+    font-style: italic;
+    font-weight: initial;
+    font-size: 35px;
+}
+.parrafo3{
+    color:rgb(14, 0, 0);
+    font-style: italic;
+    font-weight: initial;
+    font-size: 27px;
+}
+.parrafo4{
+    color:rgb(7, 2, 2);
+    font-style: italic;
+    font-weight: initial;
+    font-size: 27px;
+}
+
+.parrafo5{
+    color:rgb(2, 2, 7);
+    font-style: italic;
+    font-size: 32px;
+}
+.parrafo6{
+    color:rgb(2, 2, 7);
+    font-style: italic;
+    font-size: 32px;
+    text-shadow: 7px 4px 5px black;
+}
+
+
+ol{
+    color: rgb(3, 3, 3);
+    font-style: italic;
+    font-weight: initial;
+    font-size: 37px;
+}
+li{
+    color:rgb(12, 1, 1) ;
+    font-style: italic;
+    font-size: 27px;
+}
+body{
+    background:image(5); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    height: 100vh;
+}
+
+.pie{
+    width: 980px;
+    height: 60px;
+    background-color: blue;
+    margin: auto;
+}

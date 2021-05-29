@@ -1,0 +1,80 @@
+/* importar letras de google */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    padding: 15px;
+}
+body{
+    background-color: red;
+}
+.contenedor{
+    background-color: whitesmoke;
+}
+
+/* agregamos tipos de letras */
+.parrafo1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.parrafo2{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.parrafo3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.parrafo4{
+    font-style: italic;
+}
+
+.parrafo5{
+    font-style: oblique;
+}
+
+
+.parrafo6{
+    font-style: normal;
+}
+
+.parrafo7{
+    font-weight: bold;
+}
+
+.parrafo8{
+    font-weight: bolder;
+}
+
+.parrafo9{
+    font-variant: small-caps;
+}
+.parrafo10{
+    font-variant: normal;
+}
+.parrafo11{
+    font-size: 15px;
+}
+
+/* llamamos a la fuente importada desde google */
+
+.parrafo12{
+    font-family: 'Lobster', cursive;
+}
+
+/* Utilizamos las fuentes descargadas */
+@font-face{
+    font-family: "Girasol-delgado";
+    src: url(/fonts/Girassol-Regular.ttf);
+}
+
+@font-face{
+    font-family: "GloriaHallelujah-normal";
+    src: url(/fonts/GloriaHallelujah-Regular.ttf);
+}
+
+.parrafo13{
+    font-family: "Girasol-delgado";
+}
+
+.parrafo14{
+    font-family: "GloriaHallelujah-normal";
+}
+

@@ -1,0 +1,131 @@
+
+body{
+    background-color: blue;
+}
+
+.contenedor{
+    background-color: gainsboro;
+}
+
+header{
+    background-color: gold;
+}
+
+nav{
+    background-color: greenyellow;
+}
+
+section{
+    background-color: white;
+}
+
+footer{
+    background-color: brown;
+}
+
+.borde1{
+    border-style: dotted;
+}
+
+.borde2{
+    border-style: dashed;
+}
+.borde3{
+    border-style: solid;
+}
+
+.borde4{
+    border-style: double;
+}
+.borde5{
+    border-style: groove;
+}
+
+.borde6{
+    border-style: ridge;
+}
+
+.borde7{
+    border-style: inset;
+}
+
+.borde8{
+    border-style: outset;
+}
+.borde9{
+    border-style: none;
+}
+.borde10{
+    border-style: hidden;
+}
+
+/* Agregamos un borde de tipo combinado
+borde-style: valor; --> borde se aplica a los 4 lados de la etiqueta(arriba,abajo,izquierda,derecha)
+borde-style: valor1 valor2; --> borde se aplica (arriba,abajo) (izquierda,derecha)
+borde-style: valor1 valor2 valor3; --> borde se aplica (arriba)(izquierda,derecha)(abajo)
+borde-style: valor1 valor2 valor3 valor4; --> borde se aplica (arriba)(abajo) (izquierda)(derecha) */
+.borde11{
+    border-style: solid dashed double dotted;
+}
+
+.borde12{
+    border-style: dotted ;
+    border-width: 10px;
+}
+.borde13{
+    border-style: dashed ;
+    border-width: medium;
+}
+
+.borde14{
+    border-style: solid ;
+    border-width: 10px 3px 10px 3px;
+}
+
+.borde15{
+    border-style: solid;
+    border-color: red;
+}
+
+.borde16{
+    border-style: dashed;
+    border-width: 10px;
+    border-color: red green red green ;
+}
+
+/* aplicamos bordes solo a un lugar especifico 
+arriba --> top
+abajo --> botton
+izquierda --> left
+derecha --> right
+*/
+
+.borde17{
+    border-top-style: dashed;
+}
+
+.borde18{
+    border-bottom-style:dotted ;
+}
+.border19{
+    border-left-style: groove ;
+}
+
+.borde20{
+    border-right-style: solid;
+}
+
+/* aplicamos bordes redondeados */
+
+.borde21{
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+}
+
+.borde22{
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 15px;
+}
+

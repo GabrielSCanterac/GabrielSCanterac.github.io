@@ -1,0 +1,43 @@
+body{
+    background-color: darkblue;
+}
+
+.contenedor{
+    background-color: whitesmoke;
+}
+
+ul{
+    background-color: cornflowerblue;
+    padding: 15px;
+    list-style-type: square;
+}
+
+ul li{
+    background-color: crimson;
+    color: white;
+    margin: 3px
+}
+
+ul li ul{
+    background-color: cyan;
+    padding: 5p;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+ul li ul li{
+    background-color: darkgoldenrod;
+    margin: 3px;
+    list-style-type: disc;
+}
+
+ul li ul li ul{
+        background-color: darkmagenta;
+        padding: 5px;
+}
+
+ul li ul li ul li{
+    background-color: darkorange;
+    margin: 3px;
+    list-style-type: none;
+}

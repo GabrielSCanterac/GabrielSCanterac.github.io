@@ -1,0 +1,184 @@
+/*Display que es la forma de mostrar*/
+li{
+    display: inline;
+}
+
+span{
+    display: block;
+}
+
+a{
+    display: block;
+}
+
+p span{
+    display: inline-block;
+    width: 30%;
+}
+
+.elementolista p{
+    display: list-item;
+    margin-left: 50px;
+}
+
+.contenedor{
+    display: table;
+    border-spacing: 10px ;
+}
+
+.contenido{
+    display: row;
+}
+
+.izquierda, .principal, .derecha{
+    display: table-cell;
+}
+
+.principal{
+    width: 60%;
+}
+
+.izquierda, .derecha{
+    width: 20%;
+}
+
+.flexible{
+    display: flex;
+    margin-bottom: 15px;
+    background-color: cornsilk;
+}
+
+.flexible p{
+    width: 25%;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    background-color: cadetblue;
+}
+
+.flexible2 p{
+    width: 250%;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background-color: coral;
+}
+
+
+.flexible3 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible4 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+    background-color: darkturquoise;
+}
+
+
+.flexible4 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible5 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    background-color: gainsboro;
+}
+
+
+.flexible5 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible6 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    background-color: hotpink;
+}
+
+
+.flexible6 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible7 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 15px;
+    background-color: pink;
+}
+
+
+.flexible7 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible8 {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    margin-bottom: 15px;
+    background-color: khaki;
+}
+
+
+.flexible8 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible9 {
+    display: flex;
+    flex-flow: wrap row-reverse;
+    margin-bottom: 15px;
+    background-color: greenyellow;
+}
+
+
+.flexible9 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+.flexible10 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    background-color: lightsalmon;
+}
+
+
+.flexible10 p{
+    width: 250px;
+    border: black 1px solid;
+    margin: 4px;
+}
+
+
+

@@ -1,0 +1,30 @@
+.contenedor{
+    width: 980px;
+    height: 800px;
+    background-color: red;
+}
+
+.cabecera{
+    width: 980px;
+    height: 250px;
+    background-color: orangered;
+}
+
+.menu{
+    width: 310px;
+    height: 490px;
+    background-color: yellow;
+}
+.contenido{
+    width: 670px;
+    height: 490px;
+    background-color: yellowgreen;
+    margin-left: 310px ;
+    margin-top: -490px;
+}
+.pie{
+    width: 980px;
+    height: 60px;
+    background-color: blue;
+    margin: auto;
+}
