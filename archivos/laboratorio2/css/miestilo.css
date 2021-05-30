@@ -20,3 +20,8 @@ li a.activo {
     background-color: green;
     color: white;
 }
+
+li a:hover:not(.activo) {
+    background-color: royalblue;
+    color: black;
+}
