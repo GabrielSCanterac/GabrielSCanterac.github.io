@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+        function CalcularBasico(numh, cosh){
+        return numh*cosh;
+    }
+    function calcularBonificacion(cate, sueb){
+        var b=0
+        if(cate=="a"){
+            b=sueb*0.03;
+        }else if(cate=="b"){
+            b=sueb*0.05;
+        }else if(cate=="c"){
+            b=sueb*0.07;
+        }else if(cate=="d"){
+            b=sueb*0.09;
+        }
+        return b;
+    }
+    function CalcularDescuento(sueb){
+        return sueb*0.05;
+    }
+    function CalcularFinal(sueb,boni,desc){
+        return sueb+boni-des;
+    }
+    function Calcular(){
+        var txtNh=document.getElementById("txtNh");
+        var txtCh=document.getElementById("txtCh");
+        var txtSb=document.getElementById("txtSb");
+        var rbA=document.getElementById("rbA");
+        var rbB=document.getElementById("rbB");
+        var rbC=document.getElementById("rbC");
+        var rbD=document.getElementById("rbD");
+        var txtBon=document.getElementById("txtNh");
+        var chkTar=document.getElementById("chkTar");
+        var txtDes=document.getElementById("txtDes");
+        var txtSf=document.getElementById("txtSf");
+
+}
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtNh">Numero de Horas</label>
+        <input type="text" name="txtNh" id="txtNh">
+        <br>
+        <label for="txtCh">Costo por Horas</label>
+        <select name="" id="">
+            <option value="cboArea">seleccione una area</option>
+            <option value="cboArea">seleccione una area</option>
+            <option value="cboArea">seleccione una area</option>
+            <option value="cboArea">seleccione una area</option>
+            <option value="cboArea">seleccione una area</option>
+        </select>
+        <br>
+        <label for="txtSb">Sueldo basico</label>
+        <input type="text" name="txtSb" id="txtSb">
+        <br>
+        <label for="">categoria:</label>
+        <input type="radio" name="categoria" id="rbA">
+        <label for="rbA">A</label>
+        <label for=""></label>
+        <input type="radio" name="categoria" id="rbB">
+        <label for="rbB">B</label>
+        <label for=""></label>
+        <input type="radio" name="categoria" id="rbC">
+        <label for="rbC">C</label>
+        <label for=""></label>
+        <input type="radio" name="categoria" id="rbD">
+        <label for="rbD">D</label>
+        <br>
+        <label for="txtBon">Bonificacion</label>
+        <input type="text" name="txtBon" id="txtBon">
+        <br>
+        <label for="">tardanzas</label>
+        <input type="checkbox" name="chkTar" id="chkTar">
+        <label for="chkTar">si</label>
+        <br>
+        <label for="txtDes">Descuento</label>
+        <input type="text" name="txtDes" id="txtDes">
+        <br>
+        <label for="txtSf">Sueldo final</label>
+        <input type="text" name="txtSf" id="txtSf">
+        <br>
+        <!-- ----------------------------------------------------------- -->
+        <input type="button" value="Calcular" id="tbnCalcular" name="btnCalcular" onclick="Calcular()">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+</body>
+</html>l

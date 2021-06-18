@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 5</title>
+    <link rel="stylesheet" href="css/miestilo.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <div class="cajas">
+                <input type="text" name="txtNom" id="txtNom" placeholder="Nombres">
+                <input type="text" name="txtApe" id="txtApe" placeholder="Apellido">
+                <input type="mail" name="txtCor" id="txtCor" placeholder="Coreeo">
+            </div>
+            <div class="radios">
+                <input type="radio" name="sexo" id="rbMas">
+                <label for="rbMas">Masculino</label>
+                <input type="radio" name="sexo" id="rbFem" >
+                <label for="rbFem">Femenino</label>
+                <input type="radio" name="sexo" id="rbOtr" >
+                <label for="rbOtr">Otro</label>
+            </div>
+            <div class="casilla">
+                <input type="checkbox" name="chkEst" id="chkEst">
+                <label for="shkEst">Habilitado</label>
+                </div>
+                <input type="button" value="Registrar" name="btnRegistrar" id="btnRegistrar" class="boton" onclick="Registrar()">
+                <ul class="error" name="error" id="error"></ul>
+        </form>
+    </div>
+    <script src="jsç/mibiblioteca.js" type="text/javascript"></script>
+</body>
+</html>

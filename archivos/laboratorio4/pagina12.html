@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+    //Ejemplo1 
+    //Desarrollar una aplicacion que permita ingresar dos numeros y luego
+    //calcule las 4 operaciones basicas.
+    //¿Cuantas variables necesito?
+    // 6
+    //¿Que tipo de datos necesito?
+    // Real
+    //¿Cuales serian variables?
+    // n1,n2, sum, res, mul, div,
+    //¿Que variables voy a leer?
+    // n1, n2
+
+    //declarando funciones 
+    function CalcularSuma(num1,num2){
+        return num1+num2;
+    }
+    function CalcularResta(num1,num2){
+        return num1-num2;
+    }
+    function CalcularMultiplicacion(num1,num2){
+        return num1*num2
+    }
+    function CalcularDivision(num1,num2){
+        var d=0;
+        d=num1/num2;
+        return d;
+    }
+    //declarando e inicializando variables
+    var n1=0, n2=0, sum=0, res=0, mul=0, div=0;
+    //Capturando valores
+    n1=parseFloat(prompt("Ingrese el numero 1:"));
+    n2=parseFloat(prompt("Ingrese el numero 2:"));
+    //Llamando a las funciones para calcular
+    sum=CalcularSuma(n1,n2);
+    res=CalcularResta(n1,n2);
+    mul=CalcularMultiplicacion(n1,n2);
+    div=CalcularDivision(n1,n2);
+    //mostrando resultados
+    document.write("La suma es: "+sum+"<br>");
+    document.write("La resta es: "+res+"<br>");
+    document.write("La multiplicacion es: "+mul+"<br>");
+    document.write("La division es: "+div+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
