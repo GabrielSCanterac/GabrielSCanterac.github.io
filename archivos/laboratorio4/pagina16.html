@@ -5,32 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascrispt - Parte 4</title>
+    <title>Javascript - Parte 4</title>
     <script type="text/javascript">
-        //Para los chechbox y los RadioButton
-        // var nombrecontrol=document.getElementById("chkTar");
+        //Para los Checkbox y lor resultados
+        // var nombrecontrol=document.getElementById("nombrecontrol").checked;
         //Ejemplo 2
-        //Desarrollar una aplicacion que permita calcular el sueldo final de un 
-        //trabajador si se sabe que el numero de horas trabajadas se ingresan y el 
-        //costo por hora trabajada se ingresa. Adicional se calculara 
-        //una bonificacion de acuerdo a la siguiente tabla:
-        //Categoria        Bonificacion 
-        //   A                  3%
-        //   B                  5%
-        //   C                  7%
-        //   D                  9%
+        //Desarrollar una aplicacion que permita calcular el sueldo final de un trabajadpr si se sabe que el numero de horas trabahadas se ingresan y el costo por hora trabajada tambien se ingresa. Adicional se calculara una bonificacion de acuerdo a la siguiente tabla:
+        // Categoria   Bonificacion
+        // A           3%
+        // B           5%
+        // C           7%
+        // D           9%
         //y un descuento del 5% si es que existiera tardanza.
-        //mostrar todos los resultados y utilizar formularios
-        //¿Cuantas variables 
+        //Mostrar todos los resultados y utilizar formularios
+        //¿Cuantas variables necesito?
         //6
-        //¿Que tipo de aatos necesito?
+        //¿Que tipo de datos necesito?
         //Real
-        //¿Cuales serian variables?
-        //nh,ch, sb, bon,des,sf
+        //¿Cuales serian las variables?
+        //nh, ch, sb, bon, des, sf
         //¿Que variables voy a leer?
         //nh, ch
 
-        //declarando funciones
+        //Declarando funciones
         function CalcularBasico(numh, cosh) {
             return numh * cosh;
         }
@@ -42,7 +39,7 @@
             } else if (cate == "b") {
                 b = sueb * 0.05;
             } else if (cate == "c") {
-                b == sueb * 0.07;
+                b = sueb * 0.07;
             } else if (cate == "d") {
                 b = sueb * 0.09;
             }
@@ -50,104 +47,105 @@
         }
 
         function CalcularDescuento(sueb) {
-            return sueb * 0.5;
+            return sueb * 0.05;
         }
 
         function CalcularFinal(sueb, boni, desc) {
-            return sueb + boni - des;
+            return sueb + boni - desc;
         }
 
         //Creamos un procedimiento para Calcular
         function Calcular() {
-            //declaramos variables para los controles
+            //Declaramos variables para los controles
             var txtNh = document.getElementById("txtNh");
             var txtCh = document.getElementById("txtCh");
             var txtSb = document.getElementById("txtSb");
             var rbA = document.getElementById("rbA");
-            var rbA = document.getElementById("rbB");
-            var rbA = document.getElementById("rbC");
-            var rbA = document.getElementById("rbD");
+            var rbB = document.getElementById("rbB");
+            var rbC = document.getElementById("rbC");
+            var rbD = document.getElementById("rbD");
             var txtBon = document.getElementById("txtBon");
             var chkTar = document.getElementById("chkTar");
             var txtDes = document.getElementById("txtDes");
             var txtSf = document.getElementById("txtSf");
             //Comprobar que se selecciona o no el checkbox
-            //if (chkTar.checked) {
-            //    alert("Seleccionado");
-            //} else {
-            //   alert("No seleccionado")
-            //}
+            // if(chkTar.checked){
+            //     alert("Seleccionado")
+            // }else{
+            //     alert("No Seleccionado")
+            // }
 
-            //if (rbA.checked) {
-            //    alert("Seleccionado A");
-            //} else if (rbB.checked) {
-            //    alert("Seleccionado B");
-            //} else if (rbC.checked) {
-            //    alert("Seleccionado C");
-            //} else if (rbD.checked) {
-            //    alert("Seleccionado D");
-            //} else {
-            //    alert("Ninguno Seleccionado");
-            //}
-        }
-        //validando el ingreso de datos
-        if (txtNh.value == "") {
-            alert("Ingrese el numero de horas");
-            txtNh.focus();
-        } else if (txtCh.value == "") {
-            alert("Ingrese el costo por hora");
-            txtCh.focus();
-        } else if (rbA.checked == false && rbB.checked == false && rbC.checked == false && rbD.checked == false) {
-            alert("Selecciona una categoria");
-            rbA.focus();
-        } else {
-            //declarando e inicializando variables
-            var nh = 0,
-                ch = 0,
-                sb = 0,
-                bon = 0,
-                des = 0,
-                sf = 0;
-            //Capturando valores
-            nh = parseFloat(txtNh.value);
-            ch = parseFloat(txtCh.value);
-            //llamando a las funciones para las operaciones
-            sb = CalcularBasico(nh, ch);
-            if (rbA.checked) {
-                bon = CalcularBonificacion("a", sb);
-            } else if (rbB.checked) {
-                bon = CalcularBonificacion("b", sb);
-            } else if (rbC.cheked) {
-                bon = CalcularBonificacion("c", sb);
-            } else if (rbD.checked) {
-                bon = CalcularBonificacion("d", sb);
+            //Comprobar el estado seleccionado de los radios
+            // if(rbA.checked){
+            //     alert("Seleccionado A");
+            // }else if(rbB.checked){
+            //     alert("Seleccionado B");
+            // }else if(rbC.checked){
+            //     alert("Seleccionado C");
+            // }else if(rbD.checked){
+            //     alert("Seleccionado D");
+            // }else{
+            //     alert("Ninguno Seleccionado");
+            // }
+            //validando el ingreso de datos
+            if (txtNh.value == "") {
+                alert("Ingrese el numero de horas");
+                txtNh.focus();
+            } else if (txtCh.value == "") {
+                alert("Ingrese el costo por hora");
+                txtCh.focus();
+            } else if (rbA.checked == false && rbB.checked == false && rbC.checked == false && rbD.checked == false) {
+                alert("Seleccione una categoria");
+                rbA.focus();
             } else {
-                bon = 0;
+                //Declarando e inicializando variables
+                var nh = 0,
+                    ch = 0,
+                    sb = 0,
+                    bon = 0,
+                    des = 0,
+                    sf = 0;
+                //Capturando valores
+                nh = parseFloat(txtNh.value);
+                ch = parseFloat(txtCh.value);
+                //llamado a las funciones para las operaciones
+                sb = CalcularBasico(nh, ch);
+                if (rbA.checked) {
+                    bon = CalcularBonificacion("a", sb);
+                } else if (rbB.checked) {
+                    bon = CalcularBonificacion("b", sb);
+                } else if (rbC.checked) {
+                    bon = CalcularBonificacion("c", sb);
+                } else if (rbD.checked) {
+                    bon = CalcularBonificacion("d", sb);
+                } else {
+                    bon = 0;
+                }
+                if (chkTar.checked) {
+                    des = CalcularDescuento(sb);
+                } else {
+                    des = 0;
+                }
+                sf = CalcularFinal(sb, bon, des);
+                //mostrando resultados
+                txtSb.value = sb;
+                txtBon.value = bon;
+                txtDes.value = des;
+                txtSf.value = sf;
             }
-            if (chkTar.checked) {
-                des = CalcularDescuento(sb);
-            } else {
-                des = 0;
-            }
-            sf = CalcularFinal(sb, bon, des);
-            //mostrando resultados 
-            txtSb.value = sb;
-            txtBon.value = bon;
-            txtDes.value = des;
-            txtSf.value = sf;
         }
     </script>
 </head>
 
 <body>
     <form action="">
-        <label for="txtNh">Numero de horas</label>
+        <label for="txtNh">Numero de horas:</label>
         <input type="text" name="txtNh" id="txtNh">
         <br>
-        <label for="txtCh">Costo por hora</label>
+        <label for="txtCh">Costo por hora:</label>
         <input type="text" name="txtCh" id="txtCh">
         <br>
-        <label for="txtSb">Sueldo Basico</label>
+        <label for="txtSb">Sueldo basico:</label>
         <input type="text" name="txtSb" id="txtSb">
         <br>
         <label for="">Categorias:</label>
@@ -160,22 +158,24 @@
         <input type="radio" name="categoria" id="rbD">
         <label for="rbD">D</label>
         <br>
-        <label for="txtBon">Bonificacion</label>
-        <input type="text" name="txtBon" id="txtBon">
+        <label for="txtBon">Bonificacion:</label>
+        <input type="text" name="txtBon" id="txtBon" readonly>
         <br>
-        <label for="">tardanzas</label>
+        <label for="">Tardanzas:</label>
         <input type="checkbox" name="chkTar" id="chkTar">
-        <label for="chkTar">si</label>
+        <label for="chkTar">Si</label>
         <br>
-        <label for="txtDes">Descuento</label>
-        <input type="text" name="txtDes" id="txtDes">
+        <label for="txtDes">Descuento:</label>
+        <input type="text" name="txtDes" id="txtDes" readonly>
         <br>
         <label for="txtSf">Sueldo Final</label>
-        <input type="text" name="txtSf" id="txtSf">
+        <input type="text" name="txtSf" id="txtSf" readonly>
         <br>
         <input type="button" value="Calcular" id="btnCalcular" name="btnCalcular" onclick="Calcular()">
         <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
     </form>
+    <hr>
+    <a href="index.html">Regresar</a>
 </body>
 
 </html>

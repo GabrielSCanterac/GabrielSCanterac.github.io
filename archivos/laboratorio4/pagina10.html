@@ -1,112 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript - Parte 3</title>
     <script type="text/javascript">
-    // Ejempo 1
-    // desarrollar una aplicacion que permita calcular el sueldo final de un trabajador
-    // si se sabe q el sueldo basico se ingresa por teclado , adicional a eso se le va a calcular una bonificacion y un descuento 
-    // dependiendo de la categoria, a la cual pertenece, como se muestra 
-    // a continuacion
-    // Categoria       Bonificacion      Descuento 
-    // A                   7%               5%
-    // B                   9%               7%
-    // C                   11%              9%
-    // cuantas variables necesito?
-    //5
-    //Que tipo de datos necesito?
-    //Real y texto
-    // Cuales serian mis variables?
-    //sb, bon,des,sf,cat
-    // Que variables voy a leer?
-    // cat , sb 
-    // definiendo variables
-    var sb=0, bon=0,des=0 ,sf=0,cat="";
-    // capturando valores
-    sb=parseFloat(prompt("Ingrese el sueldo basico : "));
-    cat=prompt("Ingrese la categoria [a] o [b] o [c]: ");
-    //Selectiva
-    switch(cat.toLowerCase()){
-        case "a":
-        bon=sb*0.07;
-        des=sb*0.05;
-        break;
-        case"b":
-        bon=sb*0.09;
-        des=sb*0.07;
-        break;
-        case"c":
-        bon=sb*0.11;
-        des=sb*0.09;
-        break;
-        default:
-        break;
-    }
+        // Ejempo 1
+        // desarrollar una aplicacion que permita calcular el sueldo final de un trabajador
+        // si se sabe q el sueldo basico se ingresa por teclado , adicional a eso se le va a calcular una bonificacion y un descuento 
+        // dependiendo de la categoria, a la cual pertenece, como se muestra 
+        // a continuacion
+        // Categoria       Bonificacion      Descuento 
+        // A                   7%               5%
+        // B                   9%               7%
+        // C                   11%              9%
+        // cuantas variables necesito?
+        //5
+        //Que tipo de datos necesito?
+        //Real y texto
+        // Cuales serian mis variables?
+        //sb, bon,des,sf,cat
+        // Que variables voy a leer?
+        // cat , sb 
+        // definiendo variables
+        var sb = 0,
+            bon = 0,
+            des = 0,
+            sf = 0,
+            cat = "";
+        // capturando valores
+        sb = parseFloat(prompt("Ingrese el sueldo basico : "));
+        cat = prompt("Ingrese la categoria [a] o [b] o [c]: ");
+        //Selectiva
+        switch (cat.toLowerCase()) {
+            case "a":
+                bon = sb * 0.07;
+                des = sb * 0.05;
+                break;
+            case "b":
+                bon = sb * 0.09;
+                des = sb * 0.07;
+                break;
+            case "c":
+                bon = sb * 0.11;
+                des = sb * 0.09;
+                break;
+            default:
+                break;
+        }
 
-// realizando operaciones
-sf=sb+bon-des;
-    // mostrando resultados
-    alert("El sueldo basico es : "+sb);
-    alert("La bonificacion es: " +bon);
-    alert("El descuento es : "+des);
-    alert("El sueldo final es: "+sf);
+        // realizando operaciones
+        sf = sb + bon - des;
+        // mostrando resultados
+        alert("El sueldo basico es : " + sb);
+        alert("La bonificacion es: " + bon);
+        alert("El descuento es : " + des);
+        alert("El sueldo final es: " + sf);
 
-// Ejemplo 2
-    // Desarrollar una aplicacion que permita ingresa rel precio de un producto
-    // y la canctidad a comprar y dependiendo de la categoria se aplicara un descuento
-    // al subtotal , tal como se muestra en la siguiente etapa
-    // Categoria       Descuento 
-    // 1                   3%
-    // 2                   5%
-    // 3                   7%
-    // 4                   9%
-    // Mostrar todos los resultados
-    // cuantas variables necesito?
-    //6
-    //Que tipo de datos necesito?
-    //real y entero 
-    // Cuales serian mis variables?
-    //pre, can, sbt,tot,cat
-    // Que variables voy a leer?
-    // pre , can ,cat
-    // declarando variables
-    var pre=0,can=0,sbt=0,tot=0,des=0,Cat=0;
-    // capturando valores
-    pre=parseFloat(prompt("Ingrese el precio del prodcuto:"));
-    can=parseFloat(prompt("Ingrese la cantidad del productos a comprar:"));
-    cat=parseFloat(prompt("Ingresa la categoria [1] o [2] o[3] : "));
-    // Realizando operaciones
-    sbt=pre*can;
-    //Selectiva
-    switch(cat){
-        case 1:
-        des=sbt*0.03;
-        break;
-        case 2: 
-        des=sbt*0.05;
-        break;
-        case 3:
-        des=sbt*0.07;
-        break;
-        case 4:
-        des=sbt*0.09;
-        break;
-        default:
-        des=0;
-        break;
-    }
-    tot=sbt-des;
-    // mostrar resultados
-    document.write("El subtotal es: "+sbt+'<br>');
-    document.write("El descuento es: "+des+'<br>');
-    document.write("El total es : "+tot+'<br>');
-    document.write("<hr>")
+        // Ejemplo 2
+        // Desarrollar una aplicacion que permita ingresa rel precio de un producto
+        // y la canctidad a comprar y dependiendo de la categoria se aplicara un descuento
+        // al subtotal , tal como se muestra en la siguiente etapa
+        // Categoria       Descuento 
+        // 1                   3%
+        // 2                   5%
+        // 3                   7%
+        // 4                   9%
+        // Mostrar todos los resultados
+        // cuantas variables necesito?
+        //6
+        //Que tipo de datos necesito?
+        //real y entero 
+        // Cuales serian mis variables?
+        //pre, can, sbt,tot,cat
+        // Que variables voy a leer?
+        // pre , can ,cat
+        // declarando variables
+        var pre = 0,
+            can = 0,
+            sbt = 0,
+            tot = 0,
+            des = 0,
+            Cat = 0;
+        // capturando valores
+        pre = parseFloat(prompt("Ingrese el precio del prodcuto:"));
+        can = parseFloat(prompt("Ingrese la cantidad del productos a comprar:"));
+        cat = parseFloat(prompt("Ingresa la categoria [1] o [2] o[3] : "));
+        // Realizando operaciones
+        sbt = pre * can;
+        //Selectiva
+        switch (cat) {
+            case 1:
+                des = sbt * 0.03;
+                break;
+            case 2:
+                des = sbt * 0.05;
+                break;
+            case 3:
+                des = sbt * 0.07;
+                break;
+            case 4:
+                des = sbt * 0.09;
+                break;
+            default:
+                des = 0;
+                break;
+        }
+        tot = sbt - des;
+        // mostrar resultados
+        document.write("El subtotal es: " + sbt + '<br>');
+        document.write("El descuento es: " + des + '<br>');
+        document.write("El total es : " + tot + '<br>');
+        document.write("<a href='index.html'>Regresar</a><br>")
+        document.write("<hr>")
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
