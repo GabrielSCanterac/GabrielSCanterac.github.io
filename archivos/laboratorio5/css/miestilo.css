@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    width: 370px;
+    margin: 40px auto;
+    background: darkcyan;
+}
+
+.cajas {
+    padding: 14px;
+    border-radius: 6px 6px 0 0;
+    background: darkcyan;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 13px 18px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #245eb9;
+}
+
+.radios {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    color: #424242;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+
+}
+
+.radios label {
+    margin-left: 10px;
+}
+
+.casilla {
+    text-align: center;
+    color: #a18383;
+}
+
+.casilla label {
+    margin-left: 5px;
+}
+
+.boton1 {
+    width: 100%;
+    text-align: center;
+    background: none;
+    background-color: black;
+    color: white;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.boton1:hover {
+    background-color: black;
+}
+
+.boton2 {
+    width: 100%;
+    text-align: center;
+    background: none;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.boton2:hover {
+    background-color: black;
+}
+
+.error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ce1818;
+    color: white;
+    padding: 15px 10px;
+    padding-left: 40px;
+}

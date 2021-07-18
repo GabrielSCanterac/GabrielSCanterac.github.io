@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 2</title>
+</head>
+
+<body>
+    <h1>Registro de Usuarios del Sistema</h1>
+    <hr>
+    <form action="">
+        <label for="txtCor">Correo:</label>
+        <input type="email" name="txtCor" id="txtCor" placeholder="Ingrese correo">
+        <br>
+        <label for="txtCon">Contraseña:</label>
+        <input type="text" name="txtCon" id="txtCon" placeholder="Ingrese contraseña">
+        <br>
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+
+    <!-- Llamando al Javascript para el registro -->
+    <script src="JS/bibliotecaregistrousuario.js" type="text/javascript"></script>
+
+    <!-- Agregando las bibliotecas de Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCCrxAueYm7Lk6P4DZcRhchuCVdXLm30jI",
+            authDomain: "proyectoweb-91184.firebaseapp.com",
+            databaseURL: "https://proyectoweb-91184-default-rtdb.firebaseio.com/",
+            projectId: "proyectoweb-91184",
+            storageBucket: "proyectoweb-91184.appspot.com",
+            messagingSenderId: "327652037667",
+            appId: "1:327652037667:web:6eae110af189f2c15a0d96",
+            measurementId: "G-P6PXCDXBRL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        //declaramos una constante para las opciones de autentificacion
+        const auth = firebase.auth();
+        //declaramos una constante para las opciones de base de datos
+        const database = firebase.database();
+    </script>
+</body>
+
+</html>

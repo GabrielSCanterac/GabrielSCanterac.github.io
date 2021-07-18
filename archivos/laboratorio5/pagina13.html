@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 2</title>
+    <script type="text/javascript">
+        //El servicio de base de datos en la nube que perenece a Firebase es una base de datos no relacional -> NoSQL. Ya que no funciona com una base de datos tradicionak como MySQL, SQL Server u Oracle. Los datos que se almacenan en Firebase Real Time Database
+    </script>
+
+</head>
+
+<body>
+    <h1>Registro de Alumnos</h1>
+    <hr>
+    <form action="">
+        <input type="hidden" name="txtCod" id="txtCod">
+        <label for="txtNom">Nombres:</label>
+        <input type="text" name="txtNom" id="txtNom" placeholder="Ingrese sus apellidos">
+        <br>
+        <label for="txtApe">Apellidos:</label>
+        <input type="text" name="txtApe" id="txtApe" placeholder="Ingrese sus Apellidos">
+        <br>
+        <label for="txtDni">Dni:</label>
+        <input type="text" name="txtDni" id="txtDni" placeholder="Ingrese su Dni">
+        <br>
+        <label for="txtFec">Fecha de Nacimiento:</label>
+        <input type="date" name="txtFec" id="txtFec">
+        <br>
+        <label for="txtDir">Direccion:</label>
+        <input type="text" name="txtDir" id="txtDir" placeholder="Ingrese su direccion">
+        <br>
+        <label for="cboDistrito">Distrito</label>
+        <select name="cboDistrito" id="cboDistrito">
+            <option value="0">Seleccione un distrito</option>
+        </select>
+        <br>
+        <label for="txtTel">Telefono:</label>
+        <input type="text" name="txtTel" id="txtTel" placeholder="Ingrese su telefono">
+        <br>
+        <label for="txtCel">Celular:</label>
+        <input type="text" name="txtCel" id="txtCel" placeholder="Ingrese su celular">
+        <br>
+        <label for="txtCor">Correo:</label>
+        <input type="text" name="txtCor" id="txtCor" placeholder="Ingrese su correo">
+        <br>
+        <label for="">Sexo:</label>
+        <input type="radio" name="sexo" id="rbMas"><label for="rbMas">Masculino</label>
+        <input type="radio" name="sexo" id="rbFem"><label for="rbFem">Femenino</label>
+        <input type="radio" name="sexo" id="rbOtr"><label for="rbOtr">Otro</label>
+        <br>
+        <label for="">Estado:</label>
+        <input type="checkbox" name="chkEst" id="chkEst"><label for="chkEst">Habilitado</label>
+        <br>
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+        <input type="button" value="Actualizar" id="btnActualizar" name="btnActualizar">
+    </form>
+    <table id="tbAlumno">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dni</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Direccion</th>
+            <th>Distrito</th>
+            <th>Telefono</th>
+            <th>Celular</th>
+            <th>Correo</th>
+            <th>Sexo</th>
+            <th>Estado</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <li><a href="index.html">Atras</a></li>
+    <script src="js/bibliotecaregistroalumno.js" type="text/javascript"></script>
+    <!-- Agregando las bibliotecas de Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCCrxAueYm7Lk6P4DZcRhchuCVdXLm30jI",
+            authDomain: "proyectoweb-91184.firebaseapp.com",
+            databaseURL: "https://proyectoweb-91184-default-rtdb.firebaseio.com/",
+            projectId: "proyectoweb-91184",
+            storageBucket: "proyectoweb-91184.appspot.com",
+            messagingSenderId: "327652037667",
+            appId: "1:327652037667:web:6eae110af189f2c15a0d96",
+            measurementId: "G-P6PXCDXBRL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        //declaramos una constante para las opciones de autentificacion
+        const auth = firebase.auth();
+        //declaramos una constante para las opciones de base de datos
+        const database = firebase.database();
+    </script>
+</body>
+
+</html>

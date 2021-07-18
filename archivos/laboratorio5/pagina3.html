@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 1</title>
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="" class="form">
+
+            <div class="cajas">
+                <input type="text" name="txtNom" id="txtNom" placeholder="Nombres:" minlength="5" maxlength="27"
+                    pattern="[A-Za-z^0-9]+" required><br>
+                <input type="text" name="txtApe" id="txtApe" placeholder="Apellidos:" minlength="5" maxlength="25"
+                    pattern="[A-Za-z^0-9]+" required><br>
+                <input type="text" name="txtDni" id="txtDni" placeholder="DNI:" maxlength="8" pattern="[0-9]+"
+                    required><br>
+            </div>
+
+
+            <div class="content-select">
+                <select name="cboCurso" id="cboCurso">
+                    <option value="0">Seleccione un curso</option>
+                    <option value="1">Diseño Web</option>
+                    <option value="2">Base de datos</option>
+                    <option value="3">Programacion Java</option>
+                </select>
+                <i></i>
+            </div>
+
+
+            <div class="radios">
+                <input type="radio" name="turno" id="rbM"><label for="rbM">Mañana</label>
+                <input type="radio" name="turno" id="rbT"><label for="rbT">Tarde</label>
+                <input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label>
+            </div>
+
+
+            <div class="casilla">
+                <input type="checkbox" name="chkEst" id="chkEst">
+                <label for="chkEst">Habilitado</label><br>
+            </div>
+            <br>
+            <input type="button" value="Registrar" name="btnRegistrar" id="btnRegistrar" class="boton1"
+                onclick="RegistroDatos()">
+            <input type="reset" value="Limpiar" name="btnLimpiar" id="btnLimpiar" class="boton2">
+            <ul class="error" name="error" id="error"></ul>
+
+        </form>
+    </div>
+    <div class="tabla">
+        <table id="tbAlumno">
+            <thead>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>DNI</th>
+                <th>Curso</th>
+                <th>Turno</th>
+                <th>Estado</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <li><a href="index.html">Atras</a></li>
+    <script src="js/alumno.js" type="text/javascript"></script>
+    <script src="js/bibliotecaalumno.js" type="text/javascript"></script>
+</body>
+
+</html>
